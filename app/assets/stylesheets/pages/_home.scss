@@ -1,1 +1,5 @@
-// Specific CSS for your home-page
+body {
+  height: 100vh;
+  background-image: asset-url('home_page_background.jpg');
+  background-size: cover;
+}
