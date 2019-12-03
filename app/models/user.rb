@@ -3,8 +3,6 @@ class User < ApplicationRecord
   has_many :bookings
   has_many :reviews
   validates :first_name, :last_name, presence: true
-  validates :email, presence: true, uniqueness: true
-  validates :password, presence: true
   validates :driving_license, presence: true, uniqueness: true, length: { in: 5..50 }
 
 
