@@ -1,0 +1,26 @@
+<ul class="list-inline tabs-underlined">
+  <li>
+    <a href="#" onClick="changeTo('signup')" id="signup" class="tab-underlined active">Sign up</a>
+  </li>
+  <li>
+    <a href="#" onClick="changeTo('login')" id="login" class="tab-underlined">Login</a>
+  </li>
+</ul>
+
+<script>
+  const changeTo = destination => {
+
+  const login = document.getElementById('login');
+  const signup = document.getElementById('signup');
+
+  if (destination==='login') {
+    login.classList.add('active');
+    signup.classList.remove('active');
+  } else {
+    signup.classList.add('active');
+    login.classList.remove('active');
+  }
+
+}
+</script>
+
