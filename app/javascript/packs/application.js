@@ -15,6 +15,5 @@ import { changeTo } from './tabs'
 //   }
 
 // }
-
-
-changeTo('login');
+document.querySelector('#signup').addEventListener('click', changeTo)
+document.querySelector('#login').addEventListener('click', changeTo)
