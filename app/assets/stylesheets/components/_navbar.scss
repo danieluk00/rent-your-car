@@ -17,11 +17,13 @@ body{
 
 .navbar {
   background: #0D799B;
+  display:flex;
+  justify-content:space-between;
 }
 
 .navbar-brand{
   color: white !important;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 .nav-link{
@@ -35,4 +37,16 @@ body{
 .nav-link:hover{
   background: #13a6d3;
   transition: background 0.5s;
+}
+
+.top-left {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+.searchbar{
+  border-radius:20px !important;
+  width: 300px;
+  height: 30px;
 }
