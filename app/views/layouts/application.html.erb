@@ -13,8 +13,16 @@
     <%= notice %>
     <!-- Next line is for check if a user is validated or not -->
     <%= render 'shared/flashes' %>
-
     <%= render 'shared/navbar' %>
+    <div class="cards">
+      <%= render 'shared/card' %>
+      <%= render 'shared/card' %>
+      <%= render 'shared/card' %>
+      <%= render 'shared/card' %>
+      <%= render 'shared/card' %>
+    </div>
+
+
     <%= yield %>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
