@@ -1,3 +1,7 @@
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -9,4 +13,26 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar {
+  background: #0D799B;
+}
+
+.navbar-brand{
+  color: white !important;
+  font-size: 28px;
+}
+
+.nav-link{
+  padding: 4px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white !important;
+  font-family: 'Overpass', sans-serif;
+}
+
+.nav-link:hover{
+  background: #13a6d3;
+  transition: background 0.5s;
 }
