@@ -1,0 +1,44 @@
+.page-container {
+  position: relative;
+  height: 81vh;
+  width: 100vw;
+}
+#main-title {
+  top: 30px;
+  color: #0D799B;
+  position: absolute;
+  font-family: overpass;
+  font-size: 50px;
+  text-shadow: 0 0 3px black;
+}
+
+.background-image {
+  top: -3vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.form-custom {
+  width: 300px;
+  background-color: #ADCBE3;
+  margin: 40px;
+  padding: 20px;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 10px;
+}
+.btn-primary {
+  margin: 10px !important;
+}
+
+

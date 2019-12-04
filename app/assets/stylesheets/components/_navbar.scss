@@ -5,6 +5,7 @@ body{
 .navbar-lewagon {
   display: flex !important;
   justify-content: space-between !important;
+  height: 10vh;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -49,10 +50,10 @@ body{
 }
 
 .navbar-width {
-  width: 40vw;
+  width: 50vw;
 }
 
 .searchbar{
-  border-radius:20px !important;
-  max-width: 160px;
+  border-radius: 20px !important;
+  max-width: 150px;
 }
