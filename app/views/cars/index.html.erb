@@ -1,4 +1,11 @@
-<!-- <h1>Lists all of the cars</h1>
-<%#= @cars.each do |c| %>
+<div class="container">
 
- -->
+    <h1>Cars to rent in Barcelona</h1>
+
+    <div class="cards row">
+      <% @cars.each do |car| %>
+      <%= render 'shared/card', car: car %>
+      <% end %>
+    </div>
+
+</div>

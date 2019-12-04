@@ -8,6 +8,6 @@ class Car < ApplicationRecord
   validates :description, presence: true
 
 
-  ENGINE_TYPES = ["diesel", "petrol", "electric"]
+  ENGINE_TYPES = ["Diesel", "Petrol", "Electric"]
   validates :engine_type, inclusion: { in: ENGINE_TYPES }
 end

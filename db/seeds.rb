@@ -5,6 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+user = User.find_by(email: 'daniel@gmail.com')
+
+if user.nil?
+  user = User.create!(email: 'daniel@gmail.com', first_name: 'Daniel', last_name: 'L', driving_license: 'ABC123456', password: 'abcdef')
+end
+
 Car.destroy_all
 
-Car.create(engine_type: 'diesel', brand: 'ford', model: '206', description: 'brand new', price: '20', location: 'london')
+Car.create!(engine_type: 'diesel', brand: 'Ford', model: 'Fiesta', price: '20', location: 'london', description: 'Car', user: user)
+Car.create!(engine_type: 'petrol', brand: 'VW', model: 'Beetle', price: '22', location: 'Southport', description: 'Car', user: user)
+Car.create!(engine_type: 'electric', brand: 'Mini', model: 'Cooper', price: '19', location: 'Barcelona', description: 'Car', user: user)
+Car.create!(engine_type: 'petrol', brand: 'Ferrari', model: 'F40', price: '22', location: 'Paris', description: 'Car', user: user)
+Car.create!(engine_type: 'electric', brand: 'Mazda', model: '2', price: '19', location: 'Madrid', description: 'Car', user: user)
