@@ -1,0 +1,20 @@
+<html>
+  <style>
+body {
+  background-image: url('https://thedriven.io/wp-content/uploads/2019/11/tesla-model-3-rhd.jpg');
+  background-repeat: no-repeat;
+}
+<h2>Post your car</h2>
+    <div class="form-inputs">
+      <%= simple_form_for(@car) do |f| %>
+        <%= f.input :model %>
+        <form action="/action_page.php">
+        <p>Engine type:</p>
+        <input type="radio" name="type">Petrol<br>
+        <input type="radio" name="type">Diesel<br>
+        <input type="radio" name="type">Electric<br>
+        <%= f.button :submit, class: "btn-primary" %>
+    <%end%>
+   </div>
+  </style>
+</html>
