@@ -1,0 +1,20 @@
+.car-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 7vw;
+  width: 60vw;
+  height: 30vw;
+  left: 20vw;
+  color: white;
+  text-shadow: 0 0 7px black;
+  align-items: flex-start;
+  background-image: asset-url('joey-banks-YApiWyp0lqo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.specifications {
+  padding: 1vw;
+}
