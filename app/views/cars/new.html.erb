@@ -5,12 +5,11 @@
     <h2 id="main-title">Enter your car details</h2>
       <div class="form-inputs form-custom">
         <%= simple_form_for(@car) do |f| %>
+          <%= f.input :brand %>
           <%= f.input :model %>
-          <form action="/action_page.php">
-          <p>Engine type:</p>
-          <input type="radio" name="type"> Petrol<br>
-          <input type="radio" name="type"> Diesel<br>
-          <input type="radio" name="type"> Electric<br>
+          <%= f.input :engine_type, collection: Car::ENGINE_TYPES %>
+          <%= f.input :price %>
+          <%= f.input :location %>
           <%= f.button :submit, class: "btn-primary" %>
       <%end%>
      </div>
