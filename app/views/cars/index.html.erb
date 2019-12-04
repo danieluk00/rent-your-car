@@ -1,4 +1,12 @@
-<!-- <h1>Lists all of the cars</h1>
-<%#= @cars.each do |c| %>
+<h1>Cars to rent in Barcelona</h1>
+<h1>Cars to rent in Barcelona</h1>
+<h1>Cars to rent in Barcelona</h1>
 
- -->
+<h1>Cars to rent in Barcelona</h1>
+
+
+<div class="cards">
+  <% @cars.each do |car| %>
+  <%= render 'shared/card' %>
+  <% end %>
+</div>
