@@ -1,11 +1,16 @@
-<div class="car-container">
-  <div class="specifications">
-    <h1><%= "#{@car.id}/  #{@car.brand.capitalize}" %></h1>
-    <h2><%= "Model: #{@car.model}" %></h2>
-    <h3><%= "Engine type: #{@car.engine_type}" %></h3>
-    <h3><%= "Location: #{@car.location.capitalize}" %></h3>
-    <h3><%= "Price: #{@car.price}€/day" %></h3>
-    <h3><%= "Description: #{@car.description}" %></h3>
+<div class="page-container">
+    <div class="car-container">
+      <div class="specifications">
+        <h1><%= "#{@car.id}/  #{@car.brand.capitalize}" %></h1>
+        <h2><%= "Model: #{@car.model}" %></h2>
+        <h3><%= "Engine type: #{@car.engine_type}" %></h3>
+        <h3><%= "Location: #{@car.location.capitalize}" %></h3>
+        <h3><%= "Description: #{@car.description}" %></h3>
+      </div>
+    </div>
+    <div class="more-info">
+        <p id="price"><%= "from #{@car.price}€/day" %></p>
+        <h3 id="book_car">Book this car</h3>
+    </div>
   </div>
   
-</div>
