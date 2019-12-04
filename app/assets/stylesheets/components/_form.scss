@@ -2,19 +2,33 @@
   display: flex;
   position: absolute;
   justify-content: center;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, .5);
   height: 90%;
   width: 40vw;
-  margin: 2vw 35vw;
+  margin: 10px 25vw;
   color: white;
-  padding: 5px 0;
+  padding: 12px 24px;
+  border: solid;
 }
 
 .btn-form {
   color: white !important;
   background-color: #0A799B !important;
   text-align: center !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 10px !important;;
 }
+
+// not working yet
+// .container.a {
+//   color: white !important;
+//   text-decoration: none !important;
+// }
+
+// .container.form-text {
+//   color: white !important;
+// }
+
+
 
 

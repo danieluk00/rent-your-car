@@ -1,7 +1,12 @@
 .cards{
   display:flex;
   justify-content: space-between;
-  position: absolute;
+  // position: absolute;
+}
+
+.cards .col-2 {
+  flex: 0 0 20.666667% !important;
+  max-width: 20.666667% !important;
 }
 
 .card-car {
@@ -13,10 +18,20 @@
   margin:20px;
 }
 
-.card-car > img {
+.card-car-img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+}
+
+.card-car a {
+  text-decoration: none;
+  color:black;
+}
+
+.card-car a:hover {
+  text-decoration: none;
+  color:black;
 }
 
 .card-car h2 {
@@ -45,4 +60,9 @@
   right: 12px;
   top: -20px;
   width: 40px;
+}
+
+.a{
+  color: black !important;
+  text-decoration: none !important;
 }
