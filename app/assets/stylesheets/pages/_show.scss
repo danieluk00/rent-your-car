@@ -1,10 +1,15 @@
+.page-container {
+  position: relative;
+  height: 70vh;
+}
+
 .car-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 7vw;
+  top: 12vh;
   width: 60vw;
-  height: 30vw;
+  height: 50vh;
   left: 20vw;
   color: white;
   text-shadow: 0 0 7px black;
@@ -17,4 +22,35 @@
 
 .specifications {
   padding: 1vw;
+}
+.more-info {
+  position: absolute;
+  height: 15vh;
+  width: 15vw;
+  background-color: #435161;
+  right: 25vw;
+}
+#price {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  color: white;
+  font-size: 20px;
+  top: 20px;
+  text-align: center;
+}
+
+#book_car {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  top: 70px;
+  background-color: #0D799B;
+  padding: 10px 0;
+}
+
+#book_car:hover {
+  cursor: pointer;
 }
