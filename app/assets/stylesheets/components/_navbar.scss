@@ -16,15 +16,22 @@ body{
 }
 
 .navbar {
+  position: fixed !important;
+  width: 100%;
   z-index: 2;
   background: #0D799B;
   display:flex;
   justify-content: space-between;
 }
 
+.navbar-nav {
+  
+}
+
 .navbar-brand {
+  font-family: 'Righteous', cursive;
   color: white !important;
-  font-size: 32px !important;
+  font-size: 38px !important;
 }
 
 .nav-link{
@@ -41,13 +48,15 @@ body{
 }
 
 .top-left {
-  display:flex;
-  justify-content:space-between;
+  display: flex;
   align-items:center;
-  padding: 0 200px 0 0;
+  width: 40% !important;
 }
 
+.navbar-width {
+  width: 40%;
+}
 .searchbar{
   border-radius:20px !important;
-  width: 200px;
+  max-width: 150px;
 }
