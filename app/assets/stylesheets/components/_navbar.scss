@@ -29,7 +29,7 @@ body{
   font-family: 'Righteous';
 }
 
-.nav-link{
+.nav-link {
   padding: 4px 10px;
   margin: 10px;
   border-radius: 10px;
@@ -37,7 +37,7 @@ body{
   font-family: 'Overpass', sans-serif;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background: #13a6d3;
   transition: 1.5s;
 }
@@ -51,9 +51,11 @@ body{
 
 .navbar-width {
   width: 50vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.searchbar{
+.searchbar {
   border-radius: 20px !important;
   max-width: 150px;
 }
