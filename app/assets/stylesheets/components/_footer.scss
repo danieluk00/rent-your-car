@@ -1,8 +1,8 @@
 .footer {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  top: 82.5vh;
+  bottom: 0;
   width: 100vw;
   height: 10vh;
   background-color: #0D799B;
@@ -10,4 +10,14 @@
   text-align: center;
   justify-content: center;
   z-index: 2;
+}
+#logo-footer {
+  font-family: 'Righteous', cursive;
+}
+
+#team-footer {
+  font-family: 'Modak', cursive;
+  font-size: 30px;
+  line-height: 20px;
+  vertical-align: text-top;
 }
