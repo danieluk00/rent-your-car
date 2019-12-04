@@ -1,0 +1,20 @@
+.container__form {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .5);
+  height: 90%;
+  width: 40vw;
+  margin: 2vw 35vw;
+  color: white;
+  padding: 5px 0;
+}
+
+.btn-form {
+  color: white !important;
+  background-color: #0A799B !important;
+  text-align: center !important;
+  margin-bottom: 10px !important;
+}
+
+

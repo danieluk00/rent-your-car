@@ -1,6 +1,5 @@
-<html>
-<h2>Post your car</h2>
-<img src="url('https://thedriven.io/wp-content/uploads/2019/11/tesla-model-3-rhd.jpg')" alt="car">
+<div id = "backgroundimg" style="background-image: url('https://thedriven.io/wp-content/uploads/2019/11/tesla-model-3-rhd.jpg');">
+  <h2>Post your car</h2>
     <div class="form-inputs">
       <%= simple_form_for(@car) do |f| %>
         <%= f.input :model %>
@@ -12,4 +11,4 @@
         <%= f.button :submit, class: "btn-primary" %>
     <%end%>
    </div>
-</html>
+</div>
