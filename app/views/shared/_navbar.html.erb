@@ -20,9 +20,11 @@
       <li class="nav-item">
         <%= link_to "Sign up", new_user_registration_path, class:"nav-link" %>
       </li>
+      <% if !user_signed_in? %>
       <li class="nav-item">
         <%= link_to "Login", new_user_session_path, class:"nav-link" %>
       </li>
+      <% end %>
       <!-- we only show the logout button if a user is loged in -->
       <% if user_signed_in? %>
         <li class="nav-item">
