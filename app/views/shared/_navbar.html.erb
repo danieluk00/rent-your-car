@@ -14,9 +14,11 @@
       <li class="nav-item">
         <%= link_to "View cars", cars_path, class:"nav-link" %>
       </li>
+      <% if user_signed_in? %>
       <li class="nav-item">
         <%= link_to "Post car", new_car_path, class:"nav-link" %>
       </li>
+      <% end %>
       <% if !user_signed_in? %>
       <li class="nav-item">
         <%= link_to "Sign up", new_user_registration_path, class:"nav-link" %>
