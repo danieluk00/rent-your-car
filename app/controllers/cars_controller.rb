@@ -23,7 +23,7 @@ class CarsController < ApplicationController
   end
 
   def search_by_location(location)
-    @cars = Car.find_by(location: location)
+    @cars = Car.where(location: location)
   end
 
   # def search_by_date(from_date, to_date)
