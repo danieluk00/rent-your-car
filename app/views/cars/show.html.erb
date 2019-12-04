@@ -1,0 +1,10 @@
+<div class="car-container">
+  <div class="specifications">
+    <h1><%= "#{@car.id}/  #{@car.brand.capitalize}" %></h1>
+    <h2><%= "Model: #{@car.model}" %></h2>
+    <h3><%= "Engine type: #{@car.engine_type}" %></h3>
+    <h3><%= "Location: #{@car.location.capitalize}" %></h3>
+    <h3><%= "Price: #{@car.price}€/day" %></h3>
+    <h3><%= "Description: #{@car.description}" %></h3>
+  </div>
+</div>
