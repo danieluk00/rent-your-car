@@ -15,8 +15,8 @@ end
 
 Car.destroy_all
 
-Car.create!(engine_type: 'diesel', brand: 'Ford', model: 'Fiesta', price: '20', location: 'london', description: 'Car', user: user)
-Car.create!(engine_type: 'petrol', brand: 'VW', model: 'Beetle', price: '22', location: 'Southport', description: 'Car', user: user)
-Car.create!(engine_type: 'electric', brand: 'Mini', model: 'Cooper', price: '19', location: 'Barcelona', description: 'Car', user: user)
-Car.create!(engine_type: 'petrol', brand: 'Ferrari', model: 'F40', price: '22', location: 'Paris', description: 'Car', user: user)
-Car.create!(engine_type: 'electric', brand: 'Mazda', model: '2', price: '19', location: 'Madrid', description: 'Car', user: user)
+Car.create!(engine_type: 'Diesel', brand: 'Ford', model: 'Fiesta', price: '20', location: 'london', description: 'Car', user: user)
+Car.create!(engine_type: 'Petrol', brand: 'VW', model: 'Beetle', price: '22', location: 'Southport', description: 'Car', user: user)
+Car.create!(engine_type: 'Electric', brand: 'Mini', model: 'Cooper', price: '19', location: 'Barcelona', description: 'Car', user: user)
+Car.create!(engine_type: 'Petrol', brand: 'Ferrari', model: 'F40', price: '22', location: 'Paris', description: 'Car', user: user)
+Car.create!(engine_type: 'Electric', brand: 'Mazda', model: '2', price: '19', location: 'Madrid', description: 'Car', user: user)
