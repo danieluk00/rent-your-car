@@ -19,14 +19,33 @@
 }
 
 .car-photo {
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-direction: row;
   height: 38vh;
   width: 60vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
+
+.photo-holder {
+  background-size: cover;
+  background-position: center;
+  width: 65%;
+  height: 100%;
+}
+
+.map {
+  width:35%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map img {
+  height: 100%;
+}
+
 .name-location, #car-name {
   color: black;
+  width: 40vw;
 }
 
 .name-location {
@@ -44,34 +63,29 @@
   position: absolute;
   z-index: 1;
   height: 25vh;
-  width: 15vw;
-  background-color: #1d4d4f;
+  width: 25vw;
+  background-color: #6ba8a9;
   top: 46vh;
-  right: 28vw;
+  right: 10vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
-
 }
+
+.price-book__details {
+  display: flex;
+  flex-direction: column;
+  padding: 6% 0 0 10%;
+}
+
 #price {
-  position: absolute;
-  width: 80%;
-  left: 10px;
   color: white;
   font-size: 25px;
-  top: 20px;
-  text-align: center;
 }
 
 #dates {
-  position: absolute;
-  top: 40%;
-  left: 10%;
   color: white;
 }
 
 #service-fee {
-  position: absolute;
-  top: 55%;
-  left: 10%;
   color: white;
 }
 
@@ -83,12 +97,12 @@
   color: white;
   font-size: 20px;
   top: 70%;
-  background-color: #6ba8a9;
+  background-color: #1d4d4f;
   padding: 10px 0;
 }
 
 #book_car a {
-  
+  color: white;
 }
 
 #book_car:hover {
@@ -126,10 +140,12 @@
 #first-line {
   font-size: 50px;
   padding-bottom: 13px;
+  color: #6ba8a9;
 }
 
 #second-line {
-  font-size: 16px;
+  font-size: 24px;
+  color: #1d4d4f;
 }
 
 .active {
