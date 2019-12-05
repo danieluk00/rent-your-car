@@ -1,6 +1,7 @@
 class BookingController < ApplicationController
   def new
     @car = Car.find(params[:car_id])
+    @user = current_user
     @booking = Booking.new
   end
 
