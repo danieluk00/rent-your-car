@@ -10,4 +10,6 @@ class Car < ApplicationRecord
 
   ENGINE_TYPES = ["Diesel", "Petrol", "Electric"]
   validates :engine_type, inclusion: { in: ENGINE_TYPES }
+
+  mount_uploader :photo, PhotoUploader
 end
