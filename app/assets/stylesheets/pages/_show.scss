@@ -101,6 +101,13 @@
   width: 100vw;
   border-bottom: 1px solid black;
 }
+
+.first-line {
+  display: inline-block;
+  width: 3vw;
+  border-bottom: 1px solid black;
+}
+
 .active {
   border-bottom: none;
 }
