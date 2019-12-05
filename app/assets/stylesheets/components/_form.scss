@@ -5,17 +5,15 @@
   justify-content: center;
 }
 .container__form {
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, .5);
-  height: 77vh;
+  background-color: #6BA8A9;
   width: 30vw;
-  left: 35vw;
-  margin: 3vh 0;
+  margin: 12vh auto;
   color: white;
   padding: 12px 24px;
+
+  .text-muted {
+    color: white !important;
+  }
 }
 
 .btn-form {
