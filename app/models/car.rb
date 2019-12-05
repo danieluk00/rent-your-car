@@ -1,5 +1,6 @@
 class Car < ApplicationRecord
   belongs_to :user
+  mount_uploader :photo, PhotoUploader
   # validates :engine_type, presence: true
   # validates :brand, presence: true
   # validates :model, presence: true
@@ -7,9 +8,7 @@ class Car < ApplicationRecord
   # validates :location, presence: true
   # validates :description, presence: true
 
-
   ENGINE_TYPES = ["Diesel", "Petrol", "Electric"]
   validates :engine_type, inclusion: { in: ENGINE_TYPES }
 
-  mount_uploader :photo, PhotoUploader
 end
