@@ -4,7 +4,14 @@
       <p id="second-line"><%= "4.9 #{"⭐️" * 1 } #{@car.location.capitalize}" %></p>
     </div>
     <div class="car-container">
-      <div class="car-photo" style="background-image: url('<%= @car.photo %>');"></div>
+      <div class="car-photo" >
+        <div class="photo-holder" style="background-image: url('<%= @car.photo %>');">
+          
+        </div>
+        <div class="map">
+          <%= image_tag('map.png') %>
+        </div>
+    </div>  
     </div>
     <div class="price-book">
       <div class="price-book__details">
