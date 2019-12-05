@@ -6,10 +6,11 @@ class BookingController < ApplicationController
   end
 
   def create
-    @booking = Booking.create(booking_params)
+    @booking = Booking.new(booking_params)
+    @booking.status = "pending"
     @car = Car.find(params[:car_id])
-    @booking.user_id = current_user
-    @booking.car_id = @car
+    @booking.user = current_user
+    @booking.car = @car
     if @booking.save
       redirect_to car_path(@car)
     else
@@ -17,9 +18,28 @@ class BookingController < ApplicationController
     end
   end
 
+  def accept
+    update("accepted")
+  end
+
+  def reject
+    update("rejected")
+  end
+
+  def cancel
+    update("cancelled")
+  end
+
   private
 
   def booking_params
-    params.require(:booking).permit(:start_date, :end_date, :total_price, :status)
+    params.require(:booking).permit(:start_date, :end_date)
+  end
+
+  def update(status)
+    @booking = Booking.find(params[:id])
+    @booking.status = status
+    @booking.save
+    redirect_to dashboard_path
   end
 end
