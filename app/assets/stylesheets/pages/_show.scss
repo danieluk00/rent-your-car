@@ -1,34 +1,58 @@
 .page-container {
   position: relative;
-  height: 70vh;
+  height: 80vh;
 }
 
 .car-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 12vh;
-  width: 60vw;
+  top: 7vh;
+  width: 100vw;
   height: 50vh;
-  left: 20vw;
   color: white;
   text-shadow: 0 0 7px black;
-  align-items: flex-start;
-  background-image: asset-url('joey-banks-YApiWyp0lqo-unsplash.jpg');
+  align-items: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.car-photo {
+  background-image: asset-url('joey-banks-YApiWyp0lqo-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 38vh;
+  width: 50vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+.name-location, #car-name {
+  color: black;
+}
+
+.name-location {
+  position: relative;
+  top: 5vh;
+  left: 10vh;
+  font-size: 30px;
+  line-height: 20px;
+  text-shadow: 0 0 1px black,
+              1px 1px 2px grey;
+}
+
 .specifications {
+  position: relative;
   padding: 1vw;
 }
-.more-info {
+.price-book {
   position: absolute;
   height: 15vh;
   width: 15vw;
   background-color: #435161;
-  right: 25vw;
+  top: 46vh;
+  right: 28vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+
 }
 #price {
   position: absolute;
@@ -53,4 +77,44 @@
 
 #book_car:hover {
   cursor: pointer;
+}
+
+.overview-container {
+  font-size: 20px;
+  display: flex;
+}
+
+.overview, .reviews {
+  display: inline-block;
+  width: 150px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.overview:hover, .reviews:hover {
+  cursor: pointer;
+}
+
+.line {
+  display: inline-block;
+  width: 100vw;
+  border-bottom: 1px solid black;
+}
+
+.first-line {
+  display: inline-block;
+  width: 3vw;
+  border-bottom: 1px solid black;
+}
+
+.active {
+  border-bottom: none;
+}
+.hidden {
+  display: none;
+}
+.overview-text, .reviews-container {
+  position: absolute;
+  top: 50px;
 }
