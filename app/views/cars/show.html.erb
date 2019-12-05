@@ -1,14 +1,16 @@
 <div class="page-container">
   <div class="name-location">
-    <p><%= "#{@car.brand.capitalize} #{@car.model}" %></p>
-    <p><%= "4.9 #{"⭐️" * 5 } #{@car.location.capitalize}" %></p>
+    <p id="first-line"><%= "#{@car.brand.capitalize} #{@car.model}" %></p>
+    <p id="second-line"><%= "4.9 #{"⭐️" * 1 } #{@car.location.capitalize}" %></p>
   </div>
   <div class="car-container">
-    <div class="car-photo"></div>
+    <div class="car-photo" style="background-image: url('<%= @car.photo %>');"></div>
   </div>
   <div class="price-book">
     <p id="price"><%= "from #{@car.price}€/day" %></p>
-    <h3 id="book_car">Book this car</h3>
+    <p id="dates">3Dec - 10Dec</p>
+    <p id="service-fee">Service fee: 10%</p>
+    <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path(@car) %>  </h3>
   </div>
   <div class="specifications">
     <div class="overview-container">
