@@ -3,8 +3,10 @@ body{
 }
 
 .navbar-lewagon {
+  
   display: flex !important;
   justify-content: space-between !important;
+  height: 10vh;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -28,7 +30,7 @@ body{
   font-family: 'Righteous';
 }
 
-.nav-link{
+.nav-link {
   padding: 4px 10px;
   margin: 10px;
   border-radius: 10px;
@@ -36,7 +38,7 @@ body{
   font-family: 'Overpass', sans-serif;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background: #13a6d3;
   transition: 1.5s;
 }
@@ -49,10 +51,12 @@ body{
 }
 
 .navbar-width {
-  width: 40vw;
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.searchbar{
-  border-radius:20px !important;
-  max-width: 200px;
+.searchbar {
+  border-radius: 20px !important;
+  max-width: 220px;
 }
