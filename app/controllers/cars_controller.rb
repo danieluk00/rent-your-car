@@ -1,8 +1,6 @@
 class CarsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-
-
     if params[:query].present?
       @cars = Car.where("location ILIKE ?", "%#{params[:query]}%")
     else
@@ -12,6 +10,7 @@ class CarsController < ApplicationController
           lat: car.latitude,
           lng: car.longitude
         }
+      end
     end
   end
 
