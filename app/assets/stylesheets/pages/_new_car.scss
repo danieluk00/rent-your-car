@@ -4,7 +4,7 @@
   width: 100vw;
 }
 #main-title {
-  top: 30px;
+  top: 80px;
   color: #0D799B;
   position: absolute;
   font-family: overpass;
@@ -27,7 +27,7 @@
 
 
 .form-custom {
-  width: 300px;
+  width: 600px;
   background-color: #ADCBE3;
   margin: 40px;
   padding: 20px;
@@ -39,6 +39,13 @@
 }
 .btn-primary {
   margin: 10px !important;
+}
+
+.btn-color {
+  position: relative;
+  background-color: #1d4d4f !important;
+  left: -10px;
+  margin-bottom: 30px !important;
 }
 
 

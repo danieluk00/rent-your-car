@@ -1,0 +1,15 @@
+.search_form {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #6ba8a9;
+  height: 70%;
+  width: 50vw;
+  margin: 20px 25vw;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  z-index: 4;
+}

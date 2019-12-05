@@ -1,5 +1,6 @@
 import "bootstrap";
-import { changeTo } from './tabs'
+import { changeTo } from './tabs';
+import { show_page } from './show_page_tabs'
 
 // const changeTo = destination => {
 
@@ -17,3 +18,4 @@ import { changeTo } from './tabs'
 // }
 document.querySelector('#signup').addEventListener('click', changeTo)
 document.querySelector('#login').addEventListener('click', changeTo)
+show_page()
