@@ -1,0 +1,8 @@
+<h2><%= @user.first_name %>, please confirm your booking of this <%=@car.brand%> <%=@car.model%></h2>
+<div>
+  <%= simple_form_for [@car, @booking], url: car_booking_index_path do |f| %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <%= f.submit "Book this car", class: "btn btn-primary" %>
+  <% end %>
+</div>
