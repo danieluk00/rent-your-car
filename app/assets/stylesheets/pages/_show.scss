@@ -54,9 +54,9 @@
 #price {
   position: absolute;
   width: 80%;
-  left: -10px;
+  left: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   top: 20px;
   text-align: center;
 }
@@ -85,6 +85,10 @@
   top: 70%;
   background-color: #6ba8a9;
   padding: 10px 0;
+}
+
+#book_car a {
+  
 }
 
 #book_car:hover {

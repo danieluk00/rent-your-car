@@ -10,7 +10,7 @@
     <p id="price"><%= "from #{@car.price}€/day" %></p>
     <p id="dates">3Dec - 10Dec</p>
     <p id="service-fee">Service fee: 10%</p>
-    <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path %>  </h3>
+    <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path(@car) %>  </h3>
   </div>
   <div class="specifications">
     <div class="overview-container">
