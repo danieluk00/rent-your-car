@@ -1,25 +1,25 @@
+<div class="new-car-background">
 
-  <div class="page-container">
-      <div class="container__form">
-        <div class="title-h2">
-          Car details
+  <div class="container_form_new">
+    <div class="title-h2">
+      Tell us about your car
+    </div>
+    <%= simple_form_for [@car] do |f| %>
+      <div class="d-flex row">
+        <div class="col-6">
+          <%= f.input :brand %>
+          <%= f.input :model %>
+          <%= f.input :engine_type, collection: Car::ENGINE_TYPES %>
         </div>
-        <%= simple_form_for [@car] do |f| %>
-          <div class="d-flex row">
-            <div class="col-6">
-              <%= f.input :brand %>
-              <%= f.input :model %>
-              <%= f.input :engine_type, collection: Car::ENGINE_TYPES %>
-            </div>
-            <div class="col-6">
-            <%= f.input :price %>
-            <%= f.input :location %>
-            <%= f.input :photo %>
-            <%= f.input :photo_cache, as: :hidden %>
-            </div>
-          </div>
-          <%= f.submit "Post Your Car", class: "btn btn-primary" %>
-        <% end %>
-
+        <div class="col-6">
+        <%= f.input :price %>
+        <%= f.input :location %>
+        <%= f.input :photo %>
+        <%= f.input :photo_cache, as: :hidden %>
+        </div>
       </div>
+      <%= f.submit "Post Your Car", class: "btn btn-primary" %>
+    <% end %>
   </div>
+
+</div>

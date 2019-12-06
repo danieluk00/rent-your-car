@@ -1,3 +1,5 @@
+<div class="container">
+
 <h1><%=@user.first_name%> <%=@user.last_name%>: see your bookings </h1>
 
 <ul>
@@ -17,4 +19,6 @@
 
 <div class="link">
   <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"nav-link btn-primary" %>
+</div>
+
 </div>
