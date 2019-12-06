@@ -8,8 +8,8 @@
   flex-direction: column;
   position: relative;
   top: 7vh;
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 420px;
   color: white;
   text-shadow: 0 0 7px black;
   align-items: center;
@@ -21,8 +21,9 @@
 .car-photo {
   display: flex;
   flex-direction: row;
-  height: 38vh;
-  width: 70vw;
+  height: 350px;
+  width: 900px;
+  max-width: 900px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 
 }
@@ -48,13 +49,13 @@
 
 .name-location, #car-name {
   color: black;
-  width: 40vw;
+  width: 300px;
 }
 
 .name-location {
   position: relative;
-  top: 5vh;
-  left: 10vh;
+  top: 50px;
+  left: 100px;
   line-height: 20px;
 }
 
@@ -65,11 +66,11 @@
 .price-book {
   position: absolute;
   z-index: 2;
-  height: 22vh;
-  width: 20vw;
+  height: 220px;
+  width: 280px;
   background-color: #6ba8a9;
-  top: 45vh;
-  right: 10vw;
+  top: 430px;
+  right: 120px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
