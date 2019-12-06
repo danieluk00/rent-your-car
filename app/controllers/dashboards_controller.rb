@@ -5,18 +5,8 @@ class DashboardsController < ApplicationController
     @user = current_user
     # we get the bookings as a renter of the current user
     @renter_bookings = Booking.where(user: current_user)
-    # we get the cars of the current user as a owner
-    # @my_cars = Car.where(user: current_user)
-    # # we get the bookings of their cars as a owner
-    # @owner_bookings = []
-    # @my_cars.each do |car|
-    #   @owner_bookings << Booking.where(car: car)
-    # end
-    # @owner_bookings.flatten
-
-    # bookings and then filter
+   # only the bookings where the user of the car == current_user
     @owner_bookings = Booking.joins(:car).where("cars.user_id = ?", current_user.id)
-    # oonly the bookings where the user of the car == current_user
   end
 
 end
