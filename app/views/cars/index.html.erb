@@ -1,6 +1,6 @@
 <div class="container">
   <% if params[:query].present? %>
-    <h1 class="title">Cars to rent in <%= params[:query].capitalize %></h1>
+    <h1 class="title">Cars to rent in near to <%= @cars[0].location.capitalize %></h1>
   <% else %>
     <h1 class="title">Cars to rent in all cities</h1>
   <% end %>
@@ -11,7 +11,7 @@
       <%= render 'shared/card', car: car %>
     <% end %>
   </div>
-  
+
   <div
     id="map"
     style="width: 40%;
