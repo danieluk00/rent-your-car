@@ -1,5 +1,7 @@
 .navbar-lewagon {
-  
+  position: fixed !important;
+  width: 100vw;
+  top: 0;
   display: flex !important;
   justify-content: space-between !important;
   height: 10vh;

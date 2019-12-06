@@ -2,7 +2,8 @@
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  // position: absolute;
+  width: 60%;
+  position: relative;
 }
 
 .cards .col-2 {
@@ -16,7 +17,9 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 10px;
   border-radius:15px;
-  margin:20px;
+  margin: 20px;
+  min-width: 280px;
+  max-height: 280px;
 }
 
 .card-car-img {

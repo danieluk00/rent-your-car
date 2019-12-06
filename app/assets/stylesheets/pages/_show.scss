@@ -23,14 +23,15 @@
   flex-direction: row;
   height: 38vh;
   width: 70vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+
 }
 
 .photo-holder {
   background-size: cover;
   background-position: center;
-  width: 62%;
+  width: 65%;
   height: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 
 }
 
@@ -38,13 +39,8 @@
   width:35%;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
-#gap {
-  height: 100%;
-  width: 3%;
-}
 
 .map img {
   height: 100%;
