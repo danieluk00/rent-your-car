@@ -2,7 +2,7 @@
   <% if params[:query].present? %>
     <h1 class="title">Cars to rent in <%= params[:query].capitalize %></h1>
   <% else %>
-    <h1 class="title">Cars to rent in our site</h1>
+    <h1 class="title">Cars to rent in all cities</h1>
   <% end %>
   <div class="cards row">
     <% @cars.each do |car| %>
