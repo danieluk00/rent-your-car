@@ -4,16 +4,25 @@
   <% else %>
     <h1 class="title">Cars to rent in all cities</h1>
   <% end %>
+<div class="main-container">
+
   <div class="cards row">
     <% @cars.each do |car| %>
       <%= render 'shared/card', car: car %>
     <% end %>
   </div>
+  
   <div
     id="map"
-    style="width: 100%;
-    height: 600px;"
+    style="width: 40%;
+    height: 600px;
+    position: sticky;
+    margin-top: 19px;
+    border-radius: 10px;
+    top: 11vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
+</div>
 </div>
