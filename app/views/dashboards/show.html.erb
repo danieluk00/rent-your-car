@@ -1,29 +1,36 @@
 <div class="container" style="min-height: 80vh;">
 
-  <h1><%=@user.first_name%> <%=@user.last_name%>: see your bookings </h1>
+  <h1><%=@user.first_name%>, you have booked...</h1>
 
+<% if @renter_bookings == [] %>
+<h4> No booking yet :(</h4>
+<% end %>
 <ul>
 <% @renter_bookings.each do |booking| %>
   <li>
-    <%= booking.car.brand %> <%= booking.car.model %> (<%= booking.start_date %> to  <%= booking.end_date %>): <%= booking.status %>
+    <h4><%= booking.car.brand %> <%= booking.car.model %> (<%= booking.start_date %> to  <%= booking.end_date %>): <strong><%= booking.status %></strong></h4>
   </li>
 <% end %>
 </ul>
 
-<h1>See your car's bookings </h1>
-<ul>
+<h1>Requests for your car...</h1>
 
+<% if @owner_bookings == [] %>
+<h4> No requests for your car yet :(</h4>
+<% end %>
+<ul>
 <% @owner_bookings.each do |booking| %>
   <li>
+    <h4><%= booking.car.brand %>
     <%= booking.car.brand %>
-    <%= booking.car.brand %>
-    (<%= booking.start_date %> to  <%= booking.end_date %>): <%= booking.status %>
+    (<%= booking.start_date %> to  <%= booking.end_date %>): <strong><%= booking.status %></strong>
     <% if booking.status == 'pending' || booking.status == 'cancelled' %>
       <%= link_to "Approve", accept_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
       <%= link_to "Reject", reject_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
     <% else %>
       <%= link_to "Cancel booking", cancel_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
     <% end %>
+  </h4>
     </li>
 <% end %>
 </ul>

@@ -22,7 +22,7 @@
       <% if current_user != @car.user %>
         <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path(@car) %>  </h3>
       <% else %>
-        <h3 id="book_car">This car is yours</h3>
+        <h3 id="book_car">This is your car!</h3>
       <% end %>
     </div>
     <div class="specifications">
