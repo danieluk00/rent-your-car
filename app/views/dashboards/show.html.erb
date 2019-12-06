@@ -2,21 +2,33 @@
 
   <h1><%=@user.first_name%> <%=@user.last_name%>: see your bookings </h1>
 
-  <ul>
-  <% @bookings.each do |booking| %>
-    <li>
-      <%= booking.car.brand %> <%= booking.car.model %> (<%= booking.start_date %> to  <%= booking.end_date %>): <%= booking.status %>
-      <% if booking.status == 'pending' || booking.status == 'cancelled' %>
-        <%= link_to "Approve", accept_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
-        <%= link_to "Reject", reject_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
-      <% else %>
-        <%= link_to "Cancel booking", cancel_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
-      <% end %>
-      </li>
-  <% end %>
-  </ul>
+<ul>
+<% @renter_bookings.each do |booking| %>
+  <li>
+    <%= booking.car.brand %> <%= booking.car.model %> (<%= booking.start_date %> to  <%= booking.end_date %>): <%= booking.status %>
+  </li>
+<% end %>
+</ul>
 
+<h1>See your car's bookings </h1>
+<ul>
 
-    <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"nav-link btn-primary" %>
+<% @owner_bookings.each do |booking| %>
+  <li>
+    <%= booking.car.brand %>
+    <%= booking.car.brand %>
+    (<%= booking.start_date %> to  <%= booking.end_date %>): <%= booking.status %>
+    <% if booking.status == 'pending' || booking.status == 'cancelled' %>
+      <%= link_to "Approve", accept_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
+      <%= link_to "Reject", reject_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
+    <% else %>
+      <%= link_to "Cancel booking", cancel_booking_path(booking), method: :patch, class:"nav-link btn-primary"  %>
+    <% end %>
+    </li>
+<% end %>
+</ul>
+<div class="link">
+  <%= link_to "Log out", destroy_user_session_path, method: :delete, class:"nav-link btn-primary" %>
+</div>
 
 </div>
