@@ -1,7 +1,7 @@
 .page-container {
   position: relative;
   min-height: 100%;
-  padding: 100px 0;
+  padding-bottom: 100px;
 }
 
 .car-container {
@@ -44,7 +44,7 @@
 
 .name-location, #car-name {
   color: black;
-  width: 40vw;
+  width: 80vw;
 }
 
 .name-location {
@@ -64,8 +64,8 @@
   height: 200px;
   width: 300px;
   background-color: #6ba8a9;
-  top: 570px;
-  right: 10vw;
+  top: 450px;
+  right: 120px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
 }
 
