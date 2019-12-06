@@ -1,7 +1,7 @@
 class CarsController < ApplicationController
-  
+
   skip_before_action :authenticate_user!, only: [:index, :show]
-  
+
   def index
     if params[:query].present?
       @cars = Car.where("location ILIKE ?", "%#{params[:query]}%")
@@ -41,10 +41,6 @@ class CarsController < ApplicationController
   def search_by_location(location)
     @cars = Car.where(location: location)
   end
-
-  # def search_by_date(from_date, to_date)
-  #   @cars = Car.where()
-  # end
 
   private
 
