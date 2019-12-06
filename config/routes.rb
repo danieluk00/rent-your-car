@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   get 'dashboard', to: 'dashboards#show', as: 'dashboard'
   resources :cars, only: %i[index show new create] do
     resources :booking, only: [:new, :create]
-    resources :review, only: [:new, :create,]
   end
   resources :booking, only: [:show] do
     member do

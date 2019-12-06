@@ -13,12 +13,14 @@ h1 {
   font-size: 50px;
 }
 
-// .container {
-//   width:1000px;
-// }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-// .cards{
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-// }
+.main-container {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+}

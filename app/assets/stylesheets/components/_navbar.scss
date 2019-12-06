@@ -1,5 +1,7 @@
 .navbar-lewagon {
-  
+  position: fixed !important;
+  width: 100vw;
+  top: 0;
   display: flex !important;
   justify-content: space-between !important;
   height: 10vh;
@@ -31,7 +33,8 @@
   margin: 10px;
   border-radius: 10px;
   color: white !important;
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
 }
 
 .nav-link:hover {
