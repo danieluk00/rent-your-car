@@ -1,23 +1,29 @@
-.container__form {
-  width: 46vw;
-  border-radius: 10px;
-  padding: 40px 34px;
-
-}
-
 .btn-primary {
   color: white !important;
   background-color: #1D4D4F !important;
   text-align: center !important;
   margin-bottom: 10px !important;
-
 }
 
 .title-h2 {
   color: white;
   font-size: 50px;
-
 }
 
+.new-car-background {
+  background-image: url("https://i.pinimg.com/originals/04/73/db/0473dbc63cec8497e22496ebc6d830ff.jpg");
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.container_form_new {
+  border-radius: 10px;
+  margin-top:20px;
+  background-color: #6BA8A9;
+  width: 45vw;
+  color: white;
+  padding: 40px 35px;
+}
