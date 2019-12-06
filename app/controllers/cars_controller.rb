@@ -42,10 +42,6 @@ class CarsController < ApplicationController
     @cars = Car.where(location: location)
   end
 
-  # def search_by_date(from_date, to_date)
-  #   @cars = Car.where()
-  # end
-
   private
 
   def car_params

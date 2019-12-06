@@ -6,13 +6,12 @@
     <div class="car-container">
       <div class="car-photo" >
         <div class="photo-holder" style="background-image: url('<%= @car.photo %>');">
-          
         </div>
         <div id="map"
           data-markers="<%= @markers.to_json %>"
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
         </div>
-    </div>  
+    </div>
     </div>
     <div class="price-book">
       <div class="price-book__details">
@@ -20,7 +19,11 @@
         <p id="dates">3 Dec - 10 Dec</p>
         <p id="service-fee">Service fee: 10%</p>
       </div>
-      <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path(@car) %>  </h3>
+      <% if current_user != @car.user %>
+        <h3 id="book_car"> <%= link_to "Book this car", new_car_booking_path(@car) %>  </h3>
+      <% else %>
+        <h3 id="book_car">This car is yours</h3>
+      <% end %>
     </div>
     <div class="specifications">
       <div class="overview-container">
