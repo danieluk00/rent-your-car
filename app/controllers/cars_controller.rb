@@ -32,6 +32,10 @@ class CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
+    @markers = [{
+        lat: @car.latitude,
+        lng: @car.longitude
+      }]
   end
 
   def search_by_location(location)
