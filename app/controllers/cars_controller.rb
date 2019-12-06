@@ -10,7 +10,7 @@ class CarsController < ApplicationController
       @markers = @cars.map do |car|
         {
           lat: car.latitude,
-          lng: car.longitude
+          lng: car.longitude,
         }
       end
     end

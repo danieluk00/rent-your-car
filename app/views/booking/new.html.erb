@@ -5,7 +5,7 @@
       <%="Confirm your booking"%>
     </div>
     <div class="title-h3">
-      <%= @user.first_name %> please select the dates you would like to hire <%=@car.brand%> <%=@car.model%> for:
+      <%= @user.first_name %>, please choose the dates you would like to hire your <%=@car.brand%> <%=@car.model%>.:
     </div>
     <div>
       <%= simple_form_for [@car, @booking], url: car_booking_index_path do |f| %>
